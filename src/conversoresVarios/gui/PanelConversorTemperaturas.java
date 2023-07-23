@@ -1,61 +1,52 @@
 package conversoresVarios.gui;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class PanelConversorTemperaturas extends JFrame{
+
+import conversoresVarios.aplications.temperaturas.CalcularTemperatura;
+import conversoresVarios.aplications.temperaturas.EnumTemperatura;
+
+
+public  class PanelConversorTemperaturas {
 	
 	
-	//Atributos
-	protected JMenuBar menuBar;
-	protected JMenu menu;
-	protected JMenuItem opcion1;
-	protected JMenuItem opcion2;
-	protected JMenuItem opcion3;
-	protected JMenuItem opcion4;
-	JPanel panel;
 	
-	public PanelConversorTemperaturas() {
-		
-	}
+	
+	
 
 	public static void mostrarPanel(JPanel panel) {
 		
-		//debo iniciar los atributos de la clase
-				menuBar = new JMenuBar();
-				menu = new JMenu("Seleccione una opción");//es el mensaje antes de las opciones
-				opcion1 = new JMenuItem("Conversión de Celcius a Fahrenheit");
-				opcion2 = new JMenuItem("Conversión de Fahrenheit a Celsius");
-				opcion3 = new JMenuItem("Volver al menú principal");
-				opcion4 = new JMenuItem("Salir");
-				
-				menu.add(opcion1);
-				menu.add(opcion2);
-				menu.add(opcion3);
-				menu.add(opcion4);
-				
-				menuBar.add(menu);
-				panel.add(menuBar);
-				
-				opcion4.addActionListener(new ActionListener() {
-					
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						JOptionPane.showMessageDialog(menu,"Qué pena!!! Vuelva pronto");
-						System.exit(0) ;
-						
-					}
-				});
 		
-
-	}
+				
+		int valor = Integer.parseInt(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+										"Grados:", //mensage
+										"Ingrese Temperatura", //titulo
+										JOptionPane.PLAIN_MESSAGE));
+								
+		String temp = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+			"Elije una opción:", //mensaje
+			"Calcular conversión de temperatura",//titulo
+			JOptionPane.PLAIN_MESSAGE,
+			null,
+			new Object[] {"CELSIUS_A_FAHRENHEIT",
+						  "FAHRENHEINT_A_CELSIUS"},
+			"CELSIUS_A_FAHRENHEIT").toString());//valor por defecto							
+								
+EnumTemperatura tipo  = EnumTemperatura.valueOf(temp); //comparamos respuesta recibida con nuestra lista EnunDivisa
+		
+		double resultado = CalcularTemperatura.resultado(tipo, valor);
+		
+		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
+		"Conversión: "+ resultado +" "+ tipo, //mensaje mostrando resultado
+		"RESULTADO", //titulo
+		JOptionPane.PLAIN_MESSAGE);	
+		
+		
+	}	
+				
+				
 
 	
-}
+}//fin class

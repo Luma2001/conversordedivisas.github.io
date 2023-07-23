@@ -1,11 +1,13 @@
 package conversoresVarios.infrastructure;
 
-import conversoresVarios.gui.ConversorDeDivisas;
+import conversoresVarios.gui.Conversor;
 
 public class MultiConversor {
 
 	public static void main(String[] args) {
-		ConversorDeDivisas ventana = new ConversorDeDivisas();
+		Conversor ventana = new Conversor();
+		ventana.setVisible(true);
+		ventana.mostrarMenu();
 		
 	}
 

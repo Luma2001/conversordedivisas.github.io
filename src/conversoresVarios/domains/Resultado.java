@@ -1,6 +1,6 @@
 package conversoresVarios.domains;
 
-public class Divisa{
+public class Resultado{
 	
 	//atributo
 			protected double resultado;

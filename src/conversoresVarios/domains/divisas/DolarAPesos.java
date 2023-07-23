@@ -1,9 +1,9 @@
 package conversoresVarios.domains.divisas;
 
-import conversoresVarios.domains.ConvertirDivisa;
-import conversoresVarios.domains.Divisa;
+import conversoresVarios.domains.Convertir;
+import conversoresVarios.domains.Resultado;
 
-public class DolarAPesos extends Divisa implements ConvertirDivisa {
+public class DolarAPesos extends Resultado implements Convertir {
 
 	public DolarAPesos() {
 		super();

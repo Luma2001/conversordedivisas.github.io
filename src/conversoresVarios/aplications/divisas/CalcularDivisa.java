@@ -3,7 +3,7 @@ package conversoresVarios.aplications.divisas;
 
 import conversoresVarios.domains.divisas.*;
 
-public class Calcular {
+public class CalcularDivisa {
 	
 	
 	public static double resultado (EnumDivisa divisa, double monto) {

@@ -3,7 +3,7 @@ package conversoresVarios.gui;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import conversoresVarios.aplications.divisas.Calcular;
+import conversoresVarios.aplications.divisas.CalcularDivisa;
 import conversoresVarios.aplications.divisas.EnumDivisa;
 
 public class PanelConversorDivisas {
@@ -47,7 +47,7 @@ public class PanelConversorDivisas {
 		
 		EnumDivisa tipo  = EnumDivisa.valueOf(moneda); //comparamos respuesta recibida con nuestra lista EnunDivisa
 		
-		double resultado = Calcular.resultado(tipo, cantidad);
+		double resultado = CalcularDivisa.resultado(tipo, cantidad);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
 		"Conversión: "+ resultado, //mensaje mostrando resultado
