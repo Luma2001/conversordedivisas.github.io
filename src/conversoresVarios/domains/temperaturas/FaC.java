@@ -12,8 +12,8 @@ public class FaC extends Resultado implements Convertir
 
 	@Override
 	public double calcular(double monto) {
-		this.resultado =(monto-32)*(5/9);
-		return this.resultado;
+		super.resultado =((monto-32.0)*(5.0/9.0));
+		return super.resultado;
 	}
 
 	

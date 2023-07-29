@@ -20,7 +20,7 @@ public  class PanelConversorTemperaturas {
 		
 		
 				
-		int valor = Integer.parseInt(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+		double valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 										"Grados:", //mensage
 										"Ingrese Temperatura", //titulo
 										JOptionPane.PLAIN_MESSAGE));
@@ -39,7 +39,7 @@ EnumTemperatura tipo  = EnumTemperatura.valueOf(temp); //comparamos respuesta re
 		double resultado = CalcularTemperatura.resultado(tipo, valor);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
-		"Conversión: "+ resultado +" "+ tipo, //mensaje mostrando resultado
+		"Conversión: "+ resultado +" de "+ tipo, //mensaje mostrando resultado
 		"RESULTADO", //titulo
 		JOptionPane.PLAIN_MESSAGE);	
 		

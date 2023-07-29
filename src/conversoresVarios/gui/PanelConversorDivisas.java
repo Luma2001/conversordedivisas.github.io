@@ -13,13 +13,13 @@ public class PanelConversorDivisas {
 	public static void mostrarPanel(JPanel panel) {
 			
 	
-		int cantidad = Integer.parseInt(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+		double valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 				"Ingresa el importe de dinero que deseas convertir", //mensage
 				"Cantidad de Divisa", //titulo
 				JOptionPane.PLAIN_MESSAGE));
 
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del frame creado
-		"Cantidad que ingresaste es " + cantidad,//mensaje devuelto
+		"Cantidad que ingresaste es " + valor,//mensaje devuelto
 		"Cantidad de Divisa ",//titulo
 		JOptionPane.PLAIN_MESSAGE);
 		
@@ -47,7 +47,7 @@ public class PanelConversorDivisas {
 		
 		EnumDivisa tipo  = EnumDivisa.valueOf(moneda); //comparamos respuesta recibida con nuestra lista EnunDivisa
 		
-		double resultado = CalcularDivisa.resultado(tipo, cantidad);
+		double resultado = CalcularDivisa.resultado(tipo, valor);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
 		"Conversión: "+ resultado, //mensaje mostrando resultado

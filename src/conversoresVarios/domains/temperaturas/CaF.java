@@ -14,8 +14,8 @@ public class CaF extends Resultado implements Convertir
 
 	@Override
 	public double calcular(double monto) {
-		this.resultado =monto*(9/5)+32;
-		return this.resultado;
+		super.resultado =(monto*(9.0/5.0)+32.0);
+		return super.resultado;
 	}
 
 	//atributo
