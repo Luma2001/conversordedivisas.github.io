@@ -19,12 +19,31 @@ public  class PanelConversorTemperaturas {
 	public static void mostrarPanel(JPanel panel) {
 		
 		
-				
-		double valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+		Double valor = null;
+		boolean continuar=true;
+		
+		
+		do {
+			
+		try {		
+		valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 										"Grados:", //mensage
 										"Ingrese Temperatura", //titulo
 										JOptionPane.PLAIN_MESSAGE));
-								
+		
+		continuar=true;
+		
+		}
+		catch(NumberFormatException e) {
+			JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del frame creado
+					"Valor no válido. Ingrese un número",//mensaje devuelto
+					"ERROR ",//titulo
+					JOptionPane.PLAIN_MESSAGE);
+			continuar=false;
+	       	
+		}
+		
+		} while(!continuar);
 		String temp = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 			"Elije una opción:", //mensaje
 			"Calcular conversión de temperatura",//titulo

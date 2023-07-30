@@ -13,12 +13,30 @@ public class PanelConversorPeso {
 
 	public static void mostrarPanel(JPanel panel) {
 		
+		Double valor = null;
+		boolean continuar=true;
 		
+		
+		do {
+			
+		try {
 				
-		double valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+		valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 										"Peso:", //mensage
 										"Ingrese valor", //titulo
 										JOptionPane.PLAIN_MESSAGE));
+		continuar=true;
+		}
+		catch(NumberFormatException e) {
+			JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del frame creado
+					"Valor no válido. Ingrese un número",//mensaje devuelto
+					"ERROR ",//titulo
+					JOptionPane.PLAIN_MESSAGE);
+			continuar=false;
+	       	
+		}
+		
+		} while(!continuar);
 								
 		String peso = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 			"Elije una opción:", //mensaje

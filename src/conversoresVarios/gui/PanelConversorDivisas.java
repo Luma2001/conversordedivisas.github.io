@@ -1,5 +1,7 @@
 package conversoresVarios.gui;
 
+
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -10,14 +12,34 @@ public class PanelConversorDivisas {
 
 	
 	
-	public static void mostrarPanel(JPanel panel) {
+	public static void mostrarPanel(JPanel panel){
+		
+		Double valor = null;
+		boolean continuar=true;
+		
+		
+		do {
 			
-	
-		double valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
-				"Ingresa el importe de dinero que deseas convertir", //mensage
-				"Cantidad de Divisa", //titulo
-				JOptionPane.PLAIN_MESSAGE));
-
+		try {
+		valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+					"Ingresa el importe de dinero que deseas convertir", //mensage
+					"Cantidad de Divisa", //titulo
+					JOptionPane.PLAIN_MESSAGE));
+		continuar=true;
+		
+		}
+		catch(NumberFormatException e) {
+			JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del frame creado
+					"Valor no válido. Ingrese un número",//mensaje devuelto
+					"ERROR ",//titulo
+					JOptionPane.PLAIN_MESSAGE);
+			continuar=false;
+	       	
+		}
+		
+		} while(!continuar);
+		
+		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del frame creado
 		"Cantidad que ingresaste es " + valor,//mensaje devuelto
 		"Cantidad de Divisa ",//titulo
@@ -54,7 +76,7 @@ public class PanelConversorDivisas {
 		"Monedas", //titulo
 		JOptionPane.PLAIN_MESSAGE);
 		
-			
+				
 		
 	}		 
 
