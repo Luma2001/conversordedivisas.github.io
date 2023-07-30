@@ -9,16 +9,16 @@
 <h3>Descripción:</h3>
 <p>Multiconversor creado con Java</p>
 <p>Contiene: <br>
-  Un conversor de Monesdas:<br>
-  \t  - Pesos a Dólar y Dólar a Pesos<br>
+  Un conversor de Monedas:<br>
+      - Pesos a Dólar y Dólar a Pesos<br>
       - Pesos a Euros y Euros a Pesos<br>
       - Pesos a Libras Esterlinas y Libras Esterlinas a Pesos<br>
       - Pesos a Yen Japonés y Yen Japonés a Pesos<br>
       - Pesos a Won sur-coreano y Won sur-coreano a Pesos<br>
-  Un conversor de Temperaturas: 
+  Un conversor de Temperaturas: <br>
       - Celsius a Fahrenheit y Fahrenheit a Celsius<br>
-  Un conversor de Peso: 
-      - Kilogramos a Libras y Libras a Kilogramos. 
+  Un conversor de Peso: <br>
+      - Kilogramos a Libras y Libras a Kilogramos. <br>
       - Gramos a Kilogramos y Kilogramos a Gramos</p>
 <h3>Acceso al Código:</h3>
 <p> https://github.com/Luma2001/multiconversor.git</p>
