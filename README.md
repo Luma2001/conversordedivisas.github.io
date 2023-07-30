@@ -3,7 +3,8 @@
 <h1 align="center">Multiconversor</h1>
 <p>Aplicación de conocimientos adquiridos en <a href:"https://app.aluracursos.com/">Alura One</a>. <br>
   Formación Java Orientada a Objetos</p>
-<em>Código en Desarrollo</em> ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+  
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 <h3>Descripción:</h3>
 <p>Multiconversor creado con Java</p>
