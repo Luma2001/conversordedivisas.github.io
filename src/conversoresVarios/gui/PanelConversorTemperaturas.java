@@ -1,9 +1,10 @@
 package conversoresVarios.gui;
 
 
+
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
 
 import conversoresVarios.aplications.temperaturas.CalcularTemperatura;
 import conversoresVarios.aplications.temperaturas.EnumTemperatura;
@@ -12,15 +13,12 @@ import conversoresVarios.aplications.temperaturas.EnumTemperatura;
 public  class PanelConversorTemperaturas {
 	
 	
-	
-	
-	
-
 	public static void mostrarPanel(JPanel panel) {
 		
 		
 		Double valor = null;
 		boolean continuar=true;
+		Object[] options = {"Sí, por favor","No, gracias", "Cancelar"};
 		
 		
 		do {
@@ -44,6 +42,7 @@ public  class PanelConversorTemperaturas {
 		}
 		
 		} while(!continuar);
+		
 		String temp = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
 			"Elije una opción:", //mensaje
 			"Calcular conversión de temperatura",//titulo
@@ -61,6 +60,28 @@ EnumTemperatura tipo  = EnumTemperatura.valueOf(temp); //comparamos respuesta re
 		"Conversión: "+ resultado +" de "+ tipo, //mensaje mostrando resultado
 		"RESULTADO", //titulo
 		JOptionPane.PLAIN_MESSAGE);	
+		
+		
+		//Cuadro de dialogo desea continuar
+	
+	int n = JOptionPane.showOptionDialog(panel,
+	"¿Desea continuar?",
+	"Mensaje",
+	JOptionPane.YES_NO_OPTION,
+	JOptionPane.QUESTION_MESSAGE,
+	null,     //do not use a custom Icon
+	options,  //the titles of buttons
+	options[0]); //default button title
+	
+	 if(n==1 | n==2) {
+	
+						JOptionPane.showMessageDialog(panel,"Programa terminado");
+						System.exit(0) ;
+						
+					}
+				
+	 		
+		
 		
 		
 	}	

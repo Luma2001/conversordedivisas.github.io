@@ -15,6 +15,7 @@ public class PanelConversorPeso {
 		
 		Double valor = null;
 		boolean continuar=true;
+		Object[] options = {"Sí, por favor","No, gracias", "Cancelar"};
 		
 		
 		do {
@@ -57,7 +58,25 @@ EnumPeso tipo  = EnumPeso.valueOf(peso); //comparamos respuesta recibida con nue
 		"Conversión: "+ resultado +" de "+ tipo, //mensaje mostrando resultado
 		"RESULTADO", //titulo
 		JOptionPane.PLAIN_MESSAGE);	
+
+
+		//Cuadro de dialogo desea continuar
 		
+		int n = JOptionPane.showOptionDialog(panel,
+		"¿Desea continuar?",
+		"Mensaje",
+		JOptionPane.YES_NO_OPTION,
+		JOptionPane.QUESTION_MESSAGE,
+		null,     //do not use a custom Icon
+		options,  //the titles of buttons
+		options[0]); //default button title
+		
+		 if(n==1 | n==2) {
+		
+							JOptionPane.showMessageDialog(panel,"Programa terminado");
+							System.exit(0) ;
+							
+						}
 		
 	}	
 				

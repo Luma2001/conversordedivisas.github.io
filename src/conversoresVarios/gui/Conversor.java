@@ -107,17 +107,7 @@ public class Conversor extends JFrame{
  		});
        
     	 
-    	 /*
-    	//Creamos evento para el boton salir
-   		salir.addActionListener(new ActionListener() {
-
-   			@Override
-   			public void actionPerformed(ActionEvent e) {
-   				System.exit(0);
-   				
-   			}
-   			
-   		}); */
+    	
     	 
       }  
         
