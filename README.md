@@ -11,17 +11,21 @@
 <p>Contiene un menú principal que da acceso a las distintas calculadoras. <br>
   
   Las opciones disponibles son:<br>
+   <br>
   Un conversor de Monedas:<br>
       - Pesos a Dólar y Dólar a Pesos<br>
       - Pesos a Euros y Euros a Pesos<br>
       - Pesos a Libras Esterlinas y Libras Esterlinas a Pesos<br>
       - Pesos a Yen Japonés y Yen Japonés a Pesos<br>
       - Pesos a Won sur-coreano y Won sur-coreano a Pesos<br>
+       <br>
   Un conversor de Temperaturas: <br>
       - Celsius a Fahrenheit y Fahrenheit a Celsius<br>
+       <br>
   Un conversor de Peso: <br>
       - Kilogramos a Libras y Libras a Kilogramos. <br>
       - Gramos a Kilogramos y Kilogramos a Gramos</p>
+       <br>
       <p>Cada conversor cuenta:<br>
       - con un panel para ingresar el valor que se desea convertir.<br>
       - con un panel para seleccionar la conversión deseada.<br>
