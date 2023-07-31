@@ -8,7 +8,9 @@
 
 <h3>Descripción:</h3>
 <p>Multiconversor creado con Java</p>
-<p>Contiene: <br>
+<p>Contiene un menú principal que da acceso a las distintas calculadoras. <br>
+  
+  Las opciones disponibles son:<br>
   Un conversor de Monedas:<br>
       - Pesos a Dólar y Dólar a Pesos<br>
       - Pesos a Euros y Euros a Pesos<br>
@@ -20,6 +22,13 @@
   Un conversor de Peso: <br>
       - Kilogramos a Libras y Libras a Kilogramos. <br>
       - Gramos a Kilogramos y Kilogramos a Gramos</p>
+      <p>Cada conversor cuenta:<br>
+      - con un panel para ingresar el valor que se desea convertir.<br>
+      - con un panel para seleccionar la conversión deseada.<br>
+      - con un panel con el resultado obtenido.<br>
+      - con un panel que aparece luego del resultado obtenido, para que el usuario decida que desea hacer, si continuar o no.<br>
+      Si decide continuar vuelve al menú principal y si no aparece panel anunciando cierre del programa.
+      
 <h3>Acceso al Código:</h3>
 <p> https://github.com/Luma2001/multiconversor.git</p>
 <h3>Tecnología Utilizada:</h3>
