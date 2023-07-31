@@ -39,3 +39,11 @@
 <p>JAVA</p>
 <h3>Desarrolladora del Proyecto:</h3>
 <p>https://github.com/Luma2001</p>
+## Autora
+
+| [<img src="https://avatars.githubusercontent.com/u/114626233?s=400&u=dd2604a961ab0af784111b5f02e838c01cf1ee4e&v=4" width=115><br><sub>Luma2001</sub>](https://github.com/Luma2001) |  
+| :---: | :---: | :---: |
+
+
+
+
