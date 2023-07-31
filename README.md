@@ -38,11 +38,10 @@
 <h3>Tecnología Utilizada:</h3>
 <p>JAVA</p>
 <h3>Desarrolladora del Proyecto:</h3>
-|
 
 [<img src="https://avatars.githubusercontent.com/u/114626233?s=400&u=dd2604a961ab0af784111b5f02e838c01cf1ee4e&v=4" width=80><br><sub>Luma2001</sub>](https://github.com/Luma2001) 
 
-|
+
 
 
 
