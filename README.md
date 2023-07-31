@@ -2,7 +2,8 @@
 ![imagen del Multiconversor creado](https://github.com/Luma2001/multiconversor/assets/114626233/8bb714a3-83f7-4782-b018-b61cf624265d)
 <h1 align="center">Multiconversor</h1>
 <p>Aplicación de conocimientos adquiridos en Alura One (https://app.aluracursos.com/). <br>
-  Formación Java Orientada a Objetos</p>
+  Formación Java Orientada a Objetos.<br>
+Forma parte de Challenge ONE Back End.</p>
   
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
