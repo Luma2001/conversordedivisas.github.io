@@ -61,26 +61,29 @@ Aplicativo que calcula:<br>
 </p>
   <br>
 <h5>Una opción de Salida, para cerrar el programa cuando así lo desee el usuario, que dirije a ventana de despedida.</h5>
-      <br>
+      
       
    ![ventanaDeSalida](https://github.com/Luma2001/multiconversor/assets/114626233/71f974ab-fb17-4e2f-969a-e6685c286d09)
       
        <br>
 
 
-      <h5>Cada conversor cuenta:</h5>
+<h5>Cada conversor cuenta:</h5>
       <p>
       - con un panel para ingresar el valor que se desea convertir.<br>
       - con un panel para seleccionar la conversión deseada.<br>
       - con un panel con el resultado obtenido.<br>
       - con un panel que aparece luego del resultado obtenido, para que el usuario decida que desea hacer, si continuar o no.<br>
+      </p>
       
-      ![mensajeQueDeseaHacer](https://github.com/Luma2001/multiconversor/assets/114626233/f8574c49-6fbd-4ea4-bd99-0106d92d483c)
+  ![mensajeQueDeseaHacer](https://github.com/Luma2001/multiconversor/assets/114626233/f8574c49-6fbd-4ea4-bd99-0106d92d483c)
+      
 <br>
-      Si decide continuar vuelve al menú principal y si no aparece panel anunciando cierre del programa.<br>
-  </p>    
+<p>Si decide continuar vuelve al menú principal y si no aparece panel anunciando cierre del programa.</p><br>   
+  
 <h5>El programa también cuenta con el código para manejo de excepciones.</h5>
-  Si el usuario ingresa por error un valor no válido aparece ventana señalando el error y  regresa al panel para que vuelva ingresar un valor válido.</p>
+
+<p>Si el usuario ingresa por error un valor no válido aparece ventana señalando el error y  regresa al panel para que vuelva ingresar un valor válido.</p>
   
 ![ventanaError](https://github.com/Luma2001/multiconversor/assets/114626233/dd87d308-5505-452a-b61c-1e2b0cb066cb)
 
