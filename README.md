@@ -14,7 +14,9 @@ Aplicativo que calcula:<br>
   -La conversión de unidades en distintas métricas de utilidad.</p>
   
 <p>Contiene un menú principal que da acceso a las distintas calculadoras. <br>
-  ![menuPrincipal](https://github.com/Luma2001/multiconversor/assets/114626233/d677da3a-1b5e-49c4-9ea3-6f35988c7d55)<br>
+  
+  ![menuPrincipal](https://github.com/Luma2001/multiconversor/assets/114626233/d677da3a-1b5e-49c4-9ea3-6f35988c7d55)
+  <br>
   
   Las opciones disponibles son:<br>
    <br>
