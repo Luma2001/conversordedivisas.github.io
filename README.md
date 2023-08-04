@@ -65,7 +65,7 @@ Aplicativo que calcula:<br>
       
    ![ventanaDeSalida](https://github.com/Luma2001/multiconversor/assets/114626233/71f974ab-fb17-4e2f-969a-e6685c286d09)
       
-       <br>
+
 
 
 <h5>Cada conversor cuenta:</h5>
