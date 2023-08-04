@@ -25,6 +25,7 @@ public class Conversor extends JFrame{
 	private JMenuItem opcion2;
 	private JMenuItem opcion3;
 	private JMenuItem opcion4;
+	private JMenuItem opcion5;
 	
 	
 	//Constructor donde creo el marco o cuadro	
@@ -54,13 +55,14 @@ public class Conversor extends JFrame{
     		opcion1 = new JMenuItem("1- Conversor de Divisas");
     		opcion2 = new JMenuItem("2- Conversor de Temperatura");
     		opcion3 = new JMenuItem("3- Conversor de Peso");
-    		opcion4 = new JMenuItem("4- Salir");
+    		opcion4 = new JMenuItem("4- Conversor de Longitud");
+    		opcion5 = new JMenuItem("5- Salir");
     		
     		menu.add(opcion1);
     		menu.add(opcion2);
     		menu.add(opcion3);
     		menu.add(opcion4);
-    		
+    		menu.add(opcion5);
     		
     		menuBar.add(menu);
     		
@@ -96,7 +98,22 @@ public class Conversor extends JFrame{
  			
  		});
     	 
+    	 
     	 opcion4.addActionListener(new ActionListener() {
+    		 
+  			@Override
+  			public void actionPerformed(ActionEvent e) {
+  				
+  				PanelConversorLongitud.mostrarPanel(panel);
+  				
+  			}
+  			
+  		});
+    	 
+    	 
+    	 
+    	 
+    	 opcion5.addActionListener(new ActionListener() {
  			
  			@Override
  			public void actionPerformed(ActionEvent e) {

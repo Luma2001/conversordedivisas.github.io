@@ -1,10 +1,10 @@
 package conversoresVarios.aplications.pesos;
 
 public enum EnumPeso {
-	KILOS_A_LIBRAS("de Kilogramos a Libras"),
-	LIBRAS_A_KILOS("de Libras a Kilogramos"),
-	KILOS_A_GRAMOS("de Kilogramos a Gramos"),
-	GRAMOS_A_KILOS("de Gramos a Kilogramos");
+	KILOS_A_LIBRAS(" Libras"),
+	LIBRAS_A_KILOS(" Kilogramos"),
+	KILOS_A_GRAMOS(" Gramos"),
+	GRAMOS_A_KILOS(" Kilogramos");
 
 	//atributo
 	public String value;
@@ -14,4 +14,8 @@ public enum EnumPeso {
 		this.value=value;
 	}
 
+	//getter
+			public String getValue() {
+				return value;
+			}
 }

@@ -55,7 +55,7 @@ EnumPeso tipo  = EnumPeso.valueOf(peso); //comparamos respuesta recibida con nue
 		double resultado = CalcularPeso.resultado(tipo, valor);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
-		"Conversión: "+ resultado +" de "+ tipo, //mensaje mostrando resultado
+		"Conversión: "+ resultado + tipo.getValue(), //mensaje mostrando resultado
 		"RESULTADO", //titulo
 		JOptionPane.PLAIN_MESSAGE);	
 

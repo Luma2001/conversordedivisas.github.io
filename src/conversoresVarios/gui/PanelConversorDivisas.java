@@ -73,7 +73,7 @@ public class PanelConversorDivisas {
 		double resultado = CalcularDivisa.resultado(tipo, valor);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
-		"Conversión: "+ resultado, //mensaje mostrando resultado
+		"Conversión: "+ resultado + tipo.getValue(), //mensaje mostrando resultado
 		"Monedas", //titulo
 		JOptionPane.PLAIN_MESSAGE);
 		

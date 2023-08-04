@@ -1,8 +1,8 @@
 package conversoresVarios.aplications.temperaturas;
 
 public enum EnumTemperatura {
-	CELSIUS_A_FAHRENHEIT("de Celsius a Fahrenheit"),
-	FAHRENHEINT_A_CELSIUS("de Fahrenheit a Celsius");
+	CELSIUS_A_FAHRENHEIT(" Fahrenheit"),
+	FAHRENHEINT_A_CELSIUS(" Celsius");
 	
 		//Atributo
 		public String value;

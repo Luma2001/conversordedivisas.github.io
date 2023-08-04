@@ -1,19 +1,14 @@
 package conversoresVarios.gui;
 
-
-
-
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import conversoresVarios.aplications.temperaturas.CalcularTemperatura;
-import conversoresVarios.aplications.temperaturas.EnumTemperatura;
+import conversoresVarios.aplications.longitud.CalcularLongitud;
+import conversoresVarios.aplications.longitud.EnumLongitudes;
 
+public class PanelConversorLongitud {
 
-public  class PanelConversorTemperaturas {
-	
-	
-	public static void mostrarPanel(JPanel panel) {
+public static void mostrarPanel(JPanel panel) {
 		
 		
 		Double valor = null;
@@ -25,8 +20,8 @@ public  class PanelConversorTemperaturas {
 			
 		try {		
 		valor = Double.parseDouble(JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
-										"Grados:", //mensage
-										"Ingrese Temperatura", //titulo
+										"Longitud:", //mensage
+										"Ingrese medida", //titulo
 										JOptionPane.PLAIN_MESSAGE));
 		
 		continuar=true;
@@ -43,18 +38,24 @@ public  class PanelConversorTemperaturas {
 		
 		} while(!continuar);
 		
-		String temp = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
-			"Elije una opción:", //mensaje
-			"Calcular conversión de temperatura",//titulo
+		String longitudes = (JOptionPane.showInputDialog(panel, //decimos que se situe dentro del frame creado
+			"Elija una opción:", //mensaje
+			"Calcular conversión de Longitudes",//titulo
 			JOptionPane.PLAIN_MESSAGE,
 			null,
-			new Object[] {"CELSIUS_A_FAHRENHEIT",
-						  "FAHRENHEINT_A_CELSIUS"},
-			"CELSIUS_A_FAHRENHEIT").toString());//valor por defecto							
+			new Object[] {"CM_A_PULGADA",
+					"PULGADA_A_CM",
+					"METRO_A_PULGADA",
+					"PULGADA_A_METRO",
+					"METRO_A_YARDA",
+					"YARDA_A_METRO",
+					"KM_A_MILLA",
+					"MILLA_A_KM"},
+			"PULGADA_A_CM").toString());//valor por defecto							
 								
-EnumTemperatura tipo  = EnumTemperatura.valueOf(temp); //comparamos respuesta recibida con nuestra lista EnunDivisa
+EnumLongitudes tipo  = EnumLongitudes.valueOf(longitudes); //comparamos respuesta recibida con nuestra lista EnunDivisa
 		
-		double resultado = CalcularTemperatura.resultado(tipo, valor);
+		double resultado = CalcularLongitud.resultado(tipo, valor);
 		
 		JOptionPane.showMessageDialog(panel,//decimos que se situe dentro del panel creado
 		"Conversión: "+ resultado + tipo.getValue(), //mensaje mostrando resultado
@@ -86,7 +87,7 @@ EnumTemperatura tipo  = EnumTemperatura.valueOf(temp); //comparamos respuesta re
 		
 	}	
 				
-				
+	
 
 	
 }//fin class
